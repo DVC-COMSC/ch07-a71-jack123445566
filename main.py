@@ -1,10 +1,8 @@
+num_inputs = []
+for i in range(10):
+    num = int(input("Enter a number: "))
+    num_inputs.append(num)
+avg = sum(num_inputs)/10
+for i in num_inputs:
 
-numbers = list(map(int, input().split()))
-
-# ******************************
-# Make your Code
-# ******************************
-
-
-# Use this statement to print out the list element. # Replace the variable 'dist' with your variable
-# print (f'{dist:.2f}', end=' ')
+    print(f'{abs(avg-i):.2f}', end=" ")
